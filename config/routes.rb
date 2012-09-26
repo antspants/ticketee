@@ -1,4 +1,13 @@
 Ticketee::Application.routes.draw do
+
+  resources :users
+
+  namespace :api do
+    namespace :v1 do
+      resources :projects
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
