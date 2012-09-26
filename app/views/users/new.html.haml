@@ -1,13 +1,16 @@
-- form_for @user do |f|
+= form_for @user do |f|
   %ul
     %li
       = f.label :login
-      = f.input :login
+      = f.text_field :login
+    %li
+      = f.label :email
+      = f.text_field :email
     %li
       = f.label :password
-      = f.input :password
+      = f.password_field :password
     %li
       = f.label :password_confirmation
-      = f.input :password_confirmation
+      = f.password_field :password_confirmation
   %p.submit
     = f.submit "register"
