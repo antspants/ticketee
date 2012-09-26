@@ -7,6 +7,7 @@ gem 'rails', '3.2.8'
 
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'authlogic', '~> 3.1.3'
 
 
 # Gems used only for assets and not required
