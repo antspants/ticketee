@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  ## some text to say something!!
+
   def new
     @user = User.new
   end
